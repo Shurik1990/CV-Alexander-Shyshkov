@@ -36,7 +36,7 @@
 
 </head>
 
-<body>
+<body class="snow">
     <!-- Main container -->
     <div class="wrapper">
         <aside>
@@ -208,7 +208,17 @@
         </div>
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src='js/snowfall.min.js'></script>
+    <script type="text/javascript" src='js/snowfall.jquery.min.js'></script>
+    <script type='text/javascript'>
 
+        window.onload = function () {
+            document.body.className = "snow";
+            snowFall.snow(document.body, { image: "img/snowflake.png", minSize: 10, maxSize: 32 });
+        }
+
+    </script>
 </body>
 
 </html>
