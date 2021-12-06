@@ -1,7 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 body {
     font-family: 'Montserrat', sans-serif;
@@ -14,7 +15,7 @@ a {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: rgb(255 255 255 / 73%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -24,23 +25,28 @@ a {
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+    border-radius: 40px;
 }
 .wrapper:hover {
     -webkit-box-shadow: 6px 6px 16px 0 rgba(57,64,77,0.3);
-    -moz-box-shadow: 6px 6px 16px 0 rgba(57,64,77,0.3);
     box-shadow: 6px 6px 16px 0 rgba(57,64,77,0.3);
     -webkit-transform: translateY(-7px);
-    transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+        transform: translateY(-7px);
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
 }
 aside {
-    background-color: #1e2939;
+    background-color: rgb(30 41 57 / 95%);
     width: 370px;
     padding: 40px 0 40px 0;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 .my-photo {
     width: 370px;
